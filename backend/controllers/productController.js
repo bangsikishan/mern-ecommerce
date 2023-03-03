@@ -48,14 +48,32 @@ const addProduct = async (req, res) => {
 const updateProduct = async (req, res) => {
     const { id } = req.params;
 
-    res.status(200).json({ msg: `UPDATE a product with id ${id}`});
+    try {
+        const product = await Product.findByIdAndUpdate(id, { ...req.body });
+
+        res.status(200).json(product);
+    }
+    catch(error) {
+        res.status(400).json({ error: error.message });
+    }
 }
 
 // DELETE a product
 const deleteProduct = async (req, res) => {
     const { id } = req.params;
 
-    res.status(200).json({ msg: `DELETE a product with id ${id}`});
+    try {
+        const product = await Product.findByIdAndDelete(id);
+
+        if(!product) {
+            return res.status(400).json({ error: 'No product found!' });
+        }
+
+        res.status(200).json(product);
+    } 
+    catch(error) {
+        res.status(400).json({ error: error.message });
+    }
 }
 
 

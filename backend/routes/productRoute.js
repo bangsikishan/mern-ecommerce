@@ -19,7 +19,7 @@ router.get('/:id', checkId, getProduct);
 router.post('/', checkInput, addProduct);
 
 // UPDATE a product
-router.put('/:id', checkId, updateProduct);
+router.put('/:id', checkId, checkInput, updateProduct);
 
 // DELETE a product
 router.delete('/:id', checkId, deleteProduct);
