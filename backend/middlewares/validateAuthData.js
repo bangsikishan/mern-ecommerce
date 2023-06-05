@@ -4,7 +4,7 @@ const validateRegisterData = (req, res, next) => {
     const { name, email, password } = req.body;
 
     if(!name.trim() || !email.trim() || !password.trim()) {
-        return res.status(400).json({ error: 'Field cannot be empty!' });
+        return res.status(400).json({ error: 'Fields cannot be empty!' });
     }
 
     if(!validator.isEmail(email)) {
@@ -22,7 +22,7 @@ const validateLoginData = (req, res, next) => {
     const { email, password } = req.body;
 
     if(!email.trim() || !password.trim() ) {
-        return res.status(400).json({ error: 'Field cannot be empty!' });
+        return res.status(400).json({ error: 'Fields cannot be empty!' });
     }
 
     next();
