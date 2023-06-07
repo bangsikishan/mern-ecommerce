@@ -13,7 +13,7 @@ const Navbar = () => {
     }
 
     return (
-            <nav className="relative flex justify-between h-14 px-5 md:px-12 bg-[#1E1E1E]">
+            <nav className="relative flex justify-between h-14 px-5 md:px-12 bg-[#1E1E1E] z-10">
                 <div className="flex justify-center">
                     <Link to='/' className="flex items-center space-x-4">
                         <SiShopee className="text-4xl text-white" />
