@@ -1,4 +1,4 @@
-import { Carousel, Typography, Button } from "@material-tailwind/react";
+import { Carousel, Typography } from "@material-tailwind/react";
 
 import image1 from '../../assets/img/carousel_1.jpg';
 import image2 from '../../assets/img/carousel_2.jpg';

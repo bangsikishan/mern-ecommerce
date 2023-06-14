@@ -10,7 +10,7 @@ import {
 const SingleProduct = () => {
     return (
         <Card className="w-64 sm:w-80 mx-auto">
-            <CardHeader shadow={false} floated={false} className="h-96">
+            <CardHeader shadow={false} floated={false} className="h-72">
                 <img
                     src="https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80"
                     className="w-full h-full object-cover"

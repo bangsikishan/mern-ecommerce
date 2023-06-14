@@ -1,6 +1,7 @@
 import HomeCarousel from "../Carousel/HomeCarousel";
 import SingleProduct from "../SingleProduct/SingleProduct";
 import ReviewCard from "../Review/ReviewCard";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
     return (
@@ -24,6 +25,8 @@ const Home = () => {
                     <ReviewCard />
                 </div>
             </div>
+
+            <Footer />
         </div>
     );
 }

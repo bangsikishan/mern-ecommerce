@@ -8,8 +8,6 @@ const Navbar = () => {
 
     const handleClick = () => {
         setNav(prevNav => !prevNav);
-
-        console.log(nav);
     }
 
     return (
