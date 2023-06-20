@@ -11,6 +11,7 @@ import {
     Textarea,
 } from "@material-tailwind/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
+import SingleProduct from '../SingleProduct/SingleProduct';
 
 const AllProducts = () => {
     const [product, setProduct] = useState(null);
@@ -127,7 +128,13 @@ const AllProducts = () => {
                 </form>
             </div>
 
-
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-center my-10">
+                <SingleProduct />
+                <SingleProduct />
+                <SingleProduct />
+                <SingleProduct />
+                <SingleProduct />
+            </div>
         </div>
     );
 }
